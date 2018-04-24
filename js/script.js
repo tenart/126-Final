@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var stampImage;
 
 $('body').on('click', '#canvas', function (e) {
