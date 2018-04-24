@@ -32,15 +32,11 @@ p {
     font-family: sans-serif;
     margin-top: 20px;
     text-align: center;
-<<<<<<< HEAD
-}
-=======
 }
 
-<<<<<<< HEAD
 #canvas {
     background: #ffffff;
-    height: calc(100% - 40px);
+    height: 98vh;
     width: calc(100% - 40px);
     margin: 20px;
     border-radius: 4px;
@@ -50,15 +46,12 @@ p {
 .sprite {
     height: 100px;
     width: 100px;
-    background: red;
     margin: -50px;
     position: absolute;
 }
-=======
 #drop_zone {
   border: 5px solid blue;
   width:  200px;
   height: 100px;
 }
->>>>>>> origin/gh-pages
->>>>>>> e80733d9cb2b9fc5cef59e273e9ae6e6644d7b93
+

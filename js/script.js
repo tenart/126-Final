@@ -1,17 +1,23 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-$(function() {
-    $('#canvas').click(function (e) { //Default mouse Position 
-        var posX = $(this).offset().left,
-            posY = $(this).offset().top;
-        var x = e.pageX - posX;
-        var y = e.pageY - posY;
-        var sprite = "<img class='sprite' style='left:" + x + "px; top:" + y + "px'>";
-        $('#canvas').append(sprite);
+var stampImage;
+
+$('body').on('click', '#canvas', function (e) {
+  console.log(stampImage);
+
+  var img = $('<img class="sprite">')
+    .css({
+      "left": e.pageX + 'px',
+      "top": e.pageY + 'px',
     });
-})
-=======
+  img.src = window.URL.createObjectURL(stampImage);
+  img.appendTo(document.body);
+});
+
+$(document).on('change', '#image-file', function () {
+  stampImage = this.files[0];
+  $('#content').replaceWith('<div id="canvas">');
+  console.log("replacing");
+});
+
 function dropHandler(ev) {
   console.log('File(s) dropped');
 
@@ -32,10 +38,8 @@ function dropHandler(ev) {
     for (var i = 0; i < ev.dataTransfer.files.length; i++) {
       console.log('... file[' + i + '].name = ' + ev.dataTransfer.files[i].name);
     }
-  } 
-  
+  }
+
   // Pass event to removeDragData for cleanup
   removeDragData(ev)
 }
->>>>>>> origin/gh-pages
->>>>>>> e80733d9cb2b9fc5cef59e273e9ae6e6644d7b93
