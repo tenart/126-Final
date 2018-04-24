@@ -34,6 +34,10 @@ p {
     text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3de1246060417452d7efe04a303ebe9707ffdde5
 #canvas {
     background: #ffffff;
     height: 98vh;
@@ -49,6 +53,10 @@ p {
     margin: -50px;
     position: absolute;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3de1246060417452d7efe04a303ebe9707ffdde5
 #drop_zone {
   border: 5px solid blue;
   width:  200px;
