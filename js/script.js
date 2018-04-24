@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 var stampImage;
+var stampSound;
 
 $('body').on('click', '#canvas', function (e) {
   console.log(stampImage);
@@ -8,15 +8,21 @@ $('body').on('click', '#canvas', function (e) {
     .css({
       "left": e.pageX + 'px',
       "top": e.pageY + 'px',
-    });
-  img.src = window.URL.createObjectURL(stampImage);
-  img.appendTo(document.body);
+    })
+    .attr('src', window.URL.createObjectURL(stampImage));
+  $('#canvas').append(img);
+  mySound = new Audio(window.URL.createObjectURL(stampSound));
+  mySound.play()
 });
 
 $(document).on('change', '#image-file', function () {
   stampImage = this.files[0];
+});
+
+$(document).on('change', '#sound-file', function () {
+  stampSound = this.files[0];
+  console.log(stampSound);
   $('#content').replaceWith('<div id="canvas">');
-  console.log("replacing");
 });
 
 function dropHandler(ev) {
@@ -44,15 +50,3 @@ function dropHandler(ev) {
   // Pass event to removeDragData for cleanup
   removeDragData(ev)
 }
-=======
-$(function() {
-    $('#canvas').click(function (e) { //Default mouse Position 
-        var posX = $(this).offset().left,
-            posY = $(this).offset().top;
-        var x = e.pageX - posX;
-        var y = e.pageY - posY;
-        var sprite = "<img src='DButt.png' class='sprite' style='left:" + x + "px; top:" + y + "px'>";
-        $('#canvas').append(sprite);
-    });
-})
->>>>>>> 3de1246060417452d7efe04a303ebe9707ffdde5
