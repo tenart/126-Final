@@ -12,7 +12,9 @@
             <h1 id="header">PopUp</h1>
             <input type="url" placeholder="URL to image sprite">
             <p>Paste URL for the image you would like to pop up.</p>
-            <p>Paste URL for the image you would like to pop up.</p>
+            <div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+                <p>Drag one or more files to this Drop Zone ...</p>
+            </div>
         </main>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
