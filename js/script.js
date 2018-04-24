@@ -4,7 +4,7 @@ $(function() {
             posY = $(this).offset().top;
         var x = e.pageX - posX;
         var y = e.pageY - posY;
-        var sprite = "<img class='sprite' style='left:" + x + "px; top:" + y + "px'>";
+        var sprite = "<img src='DButt.png' class='sprite' style='left:" + x + "px; top:" + y + "px'>";
         $('#canvas').append(sprite);
     });
 })
