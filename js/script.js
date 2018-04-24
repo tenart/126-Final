@@ -21,8 +21,18 @@ $(document).on('change', '#image-file', function () {
 
 $(document).on('change', '#sound-file', function () {
   stampSound = this.files[0];
-  console.log(stampSound);
-  $('#content').replaceWith('<div id="canvas">');
+
+});
+
+$("#create-new").submit(function (event) {
+  event.preventDefault();
+  if (stampImage && stampSound) {
+    $('.navbar').remove();
+    $('.container-fluid').replaceWith('<div id="canvas">');
+  } else {
+    alert("Please upload files");
+  }
+
 });
 
 function dropHandler(ev) {
