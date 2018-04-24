@@ -43,7 +43,7 @@ function dropHandler(ev) {
   // Pass event to removeDragData for cleanup
   removeDragData(ev)
 }
-=======
+
 $(function() {
     $('#canvas').click(function (e) { //Default mouse Position 
         var posX = $(this).offset().left,
@@ -54,4 +54,4 @@ $(function() {
         $('#canvas').append(sprite);
     });
 })
->>>>>>> 3de1246060417452d7efe04a303ebe9707ffdde5
+
