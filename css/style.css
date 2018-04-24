@@ -33,9 +33,3 @@ p {
     margin-top: 20px;
     text-align: center;
 }
-
-#drop_zone {
-  border: 5px solid blue;
-  width:  200px;
-  height: 100px;
-}
