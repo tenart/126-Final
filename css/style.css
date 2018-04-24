@@ -18,7 +18,7 @@ main {
 }
 
 input[type=url] {
-    background: white;
+    background: rgb(255, 255, 255);
     font-size: 20px;
     border: none;
     padding: 10px;
@@ -34,3 +34,19 @@ p {
     text-align: center;
 }
 
+#canvas {
+    background: #ffffff;
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
+    margin: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.sprite {
+    height: 100px;
+    width: 100px;
+    background: red;
+    margin: -50px;
+    position: absolute;
+}
