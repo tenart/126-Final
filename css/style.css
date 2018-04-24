@@ -1,0 +1,36 @@
+body {
+    background: rgba(39, 164, 175, 0.37);
+}
+
+main {
+    width: 100%;
+    background: rgba(255, 0, 0, 0);
+    position: absolute;
+}
+
+#header {
+    font-size: 50px;
+    font-family: 'Roboto Slab';
+    color: #41a2b9;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+input[type=url] {
+    background: white;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+p {
+    font-family: sans-serif;
+    margin-top: 20px;
+    text-align: center;
+}
+
