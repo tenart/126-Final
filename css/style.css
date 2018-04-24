@@ -34,10 +34,13 @@ p {
     text-align: center;
 }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 3de1246060417452d7efe04a303ebe9707ffdde5
 #canvas {
     background: #ffffff;
-    height: calc(100% - 40px);
+    height: 98vh;
     width: calc(100% - 40px);
     margin: 20px;
     border-radius: 4px;
@@ -47,11 +50,13 @@ p {
 .sprite {
     height: 100px;
     width: 100px;
-    background: red;
     margin: -50px;
     position: absolute;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 3de1246060417452d7efe04a303ebe9707ffdde5
 #drop_zone {
   border: 5px solid blue;
   width:  200px;
