@@ -17,7 +17,32 @@ main {
     margin-bottom: 40px;
 }
 
+.info-border {
+    background: rgba(39, 164, 175, 0.37);
+    display: inline-block;
+    height: 1px;
+    width: 40px;
+}
 
+.what-is {
+    text-align: center;
+    padding: 1em;
+}
+
+.instructions {
+    text-align: center;
+    background-color: white;
+    padding: 1em;
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.create {
+    text-align: center;
+    padding: 1em;
+}
 
 input[type=url] {
     background: rgb(255, 255, 255);
@@ -35,11 +60,11 @@ p {
     margin-top: 20px;
     text-align: center;
 }
+
 #canvas {
     background: #ffffff;
-    height: 98vh;
-    width: calc(100% - 40px);
-    margin: 20px;
+    height: 100vh;
+    width: 100vw;
     border-radius: 4px;
     overflow: hidden;
 }
@@ -50,9 +75,9 @@ p {
     margin: -50px;
     position: absolute;
 }
-#drop_zone {
-  border: 5px solid blue;
-  width:  200px;
-  height: 100px;
-}
 
+#drop_zone {
+    border: 5px solid blue;
+    width: 200px;
+    height: 100px;
+}

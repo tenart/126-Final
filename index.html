@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>COMP 126 Final</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -16,9 +16,52 @@
     </nav>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="offset-md-3 col-md-6">
-                <div class="card">
+
+        <div class="what-is">
+            <div class="row">
+                <div class="offset-md-2 col-md-8">
+                    <h2>What is a PopUp?</h2>
+                    <span class="info-border"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-md-4 col-md-4">
+                    <p>A PopUp is a combination of an image and a sound that will be stamped and played on the canvas after
+                        uploading.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <div class="row">
+                <div class="offset-md-2 col-md-8 main">
+                    <h3>It's simple to create a new PopUp</h3>
+                    <span class="info-border"></span>
+                </div>
+            </div>
+            <div class="row icons">
+                <div class="offset-md-3 col-md-2 main-step">
+                    <i class="fas fa-camera-retro fa-3x"></i>
+                    <h4>Upload an image file</h4>
+                </div>
+                <div class="col-md-2 main-step">
+                    <i class="fas fa-music fa-3x"></i>
+                    <h4>Upload a sound file</h4>
+                </div>
+                <div class="col-md-2 main-step">
+                    <i class="fas fa-play fa-3x"></i>
+                    <h4>Submit!</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="create">
+            <div class="row">
+                <div class="offset-md-3 col-md-6">
+                    <h3>Make your own PopUp!</h3>
+                    <span class="info-border"></span>
+
                     <form id="create-new">
                         <fieldset>
                             <div class="form-group">
@@ -40,41 +83,13 @@
                             </div>
 
                             <button type="submit" class="btn btn-primary">Submit</button>
+
                         </fieldset>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
-    <!--
-    <main id="content">
-        <input type="url" placeholder="URL to image sprite">
-        <p>Paste URL for the image you would like to pop up.</p>
-
-        <form class="box" method="post" action="" enctype="multipart/form-data">
-            <div class="box__input">
-                <input class="box__file" type="file" name="files[]" id="image-file" data-multiple-caption="{count} files selected" multiple
-                />
-                <label for="file">
-                    <strong>Choose an image file</strong>
-                    <span class="box__dragndrop"> or drag it here</span>.</label>
-                <br>
-                <input class="box__file" type="file" name="files[]" id="sound-file" data-multiple-caption="{count} files selected" multiple
-                />
-                <label for="file">
-                    <strong>Choose a sound file</strong>
-                    <span class="box__dragndrop"> or drag it here</span>.</label>
-                <br> x
-                <button class="box__button" type="submit">Upload</button>
-            </div>
-            <div class="box__uploading">Uploading&hellip;</div>
-            <div class="box__success">Done!</div>
-            <div class="box__error">Error!
-                <span></span>.</div>
-        </form>
-    </main>
-    -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
